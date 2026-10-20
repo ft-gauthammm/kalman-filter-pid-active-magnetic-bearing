@@ -1,0 +1,21 @@
+AMB V7 STATIC / INDEPENDENT NUMERICAL CHECK
+
+positive destabilizing stiffness: PASS
+zero-order-hold implementation: PASS
+KF2 and KF3 paths: PASS
+noise/mismatch/speed studies: PASS
+V7 exports do not overwrite V6: PASS
+no V6 export paths remain: PASS
+
+Independent model calculations (Python, not MATLAB execution):
+A eigenvalues [rad/s] = 228.416096, -228.416096
+Ad =
+[[1.00104366e+00 2.00069572e-04]
+ [1.04384125e+01 1.00104366e+00]]
+Bd =
+[5.64011122e-08 5.64109208e-04]
+Ed (acceleration input) =
+[2.00034785e-08 2.00069572e-04]
+Observability rank = 2
+
+Execution limitation: MATLAB and GNU Octave were not installed/available in this runtime. Therefore the full MATLAB optimization was NOT executed here. These checks validate key equations and source/export safeguards, not end-to-end MATLAB runtime behaviour. The V6 output screenshots/CSVs remain the prior executed results.
